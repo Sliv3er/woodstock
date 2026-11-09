@@ -1,0 +1,16 @@
+{
+  "name": "woodstock",
+  "version": "1.0.0",
+  "private": true,
+  "description": "WoodStock — gestion commerciale et gestion de stock pour le négoce de bois (Ste Louati SOB)",
+  "scripts": {
+    "install:all": "npm install --prefix backend && npm install --prefix frontend",
+    "db:init": "npm run db:init --prefix backend",
+    "db:seed": "npm run db:seed --prefix backend",
+    "dev:api": "npm run dev --prefix backend",
+    "dev:web": "npm run dev --prefix frontend",
+    "build": "npm run build --prefix frontend",
+    "start": "npm start --prefix backend",
+    "test": "npm test --prefix backend"
+  }
+}
