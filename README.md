@@ -82,8 +82,7 @@ WoodStock/
 │       ├── pages/            # one page per screen
 │       └── utils/            # French formatting, labels, hooks
 └── docs/
-    ├── screenshots/
-    └── report/               # internship report (PDF + Word)
+    └── screenshots/
 ```
 
 The frontend never talks to the database: it calls the REST API (`/api/...`) with a JWT. Every rule that matters (stock never negative, invoice totals, payment limits, role permissions) is enforced by the **backend services**, inside **SQL transactions**; the frontend repeats some checks only to give immediate feedback.
@@ -239,7 +238,3 @@ The script runs 63 end-to-end checks through the HTTP API: authentication and ro
 | ![New movement](docs/screenshots/06-nouveau-mouvement.png) New stock movement | ![Invoices](docs/screenshots/07-factures.png) Invoices |
 | ![Invoice editor](docs/screenshots/08-edition-facture.png) Invoice editor | ![Invoice](docs/screenshots/09-facture.png) Invoice sheet |
 | ![Transactions](docs/screenshots/10-transactions.png) Transaction journal | ![Reports](docs/screenshots/11-rapports.png) Reports |
-
-## Internship report
-
-The internship report describing the analysis, design and implementation of this project is available in [`docs/report`](docs/report) (PDF and Word).

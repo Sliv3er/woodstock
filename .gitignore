@@ -17,3 +17,6 @@ Thumbs.db
 # Éditeurs
 .vscode/
 .idea/
+
+# Rapport de stage (document personnel, non publié)
+docs/report/
